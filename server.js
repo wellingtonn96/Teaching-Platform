@@ -1,10 +1,13 @@
 const express = require('express');
+const bodyParser = require('body-parser')
 const app = express()
 
-app.get('/', (req, res) => {
-    res.send('hello world')
-})
+
+app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({ extended: false }))
+
+require('./controllers/authController')(app)
 
 app.listen(3000, () => {
-    console.log('Web server running on port 1337')
+    console.log('servidor rodando na porta 3000')
 })
