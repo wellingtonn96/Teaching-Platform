@@ -16,7 +16,6 @@ const professor = {
     senha: '1dfsf6d',
     email: Math.random().toString().concat('@gmail.com'),
     celular: Math.random().toString(),
-    dtExpiracao: new Date(),
     apelido: 'takaizito'
 }
 
@@ -25,7 +24,6 @@ const aluno = {
     senha: 'dfsdf12',
     email: Math.random().toString().concat('@gmail.com'),
     celular:  Math.random().toString(),
-    dtExpiracao: new Date(),
     ra: 1546854,
     foto: 'https://localhost:3000/aluno_photo'
 }
@@ -40,6 +38,12 @@ const coordenador = {
 async function main() {
     const coordenadorResult = await Coordenador.create(coordenador)
     console.log(coordenadorResult.dataValues)
+
+    const alunoResult = await Aluno.create(aluno)
+    console.log(alunoResult.dataValues)
+
+    const professorResult = await Professor.create(professor)
+    console.log(professorResult.dataValues)
 }
 
 main()
