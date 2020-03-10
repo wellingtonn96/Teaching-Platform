@@ -2,7 +2,7 @@
 
 module.exports = {
   up: (queryInterface, Sequelize) => {
-      return queryInterface.createTable('Professor', {
+      return queryInterface.createTable('Coordenador', {
         id: {
           type: Sequelize.INTEGER,
           autoIncrement: true,
@@ -14,6 +14,10 @@ module.exports = {
           allowNull: false
         },
         senha: {
+          type: Sequelize.STRING,
+          allowNull: false
+        },
+        nome: {
           type: Sequelize.STRING,
           allowNull: false
         },
@@ -31,15 +35,11 @@ module.exports = {
           type: Sequelize.DATE,
           allowNull: false,
           defaultValue:'1900-01-01'
-        },
-        apelido: {
-          type: Sequelize.STRING,
-          allowNull: false
         }
       });
   },
 
   down: (queryInterface, Sequelize) => {
-      return queryInterface.dropTable('Professor');
+      return queryInterface.dropTable('Coordenador');
   }
 };

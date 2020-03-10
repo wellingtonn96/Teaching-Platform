@@ -12,8 +12,9 @@ Professor.init(connection)
 Coordenador.init(connection)
 
 const professor = {
-    login:'takai',
+    login:'takai545',
     senha: '1dfsf6d',
+    nome: 'Takai',
     email: Math.random().toString().concat('@gmail.com'),
     celular: Math.random().toString(),
     apelido: 'takaizito'
@@ -22,6 +23,7 @@ const professor = {
 const aluno = {
     login: 'welto',
     senha: 'dfsdf12',
+    nome: 'wellinton',
     email: Math.random().toString().concat('@gmail.com'),
     celular:  Math.random().toString(),
     ra: 1546854,
@@ -29,8 +31,9 @@ const aluno = {
 }
 
 const coordenador = {
-    login: 'vanderson',
+    login: 'vanderson545',
     senha: '4dsfds54',
+    nome: 'Vanderson',
     email: Math.random().toString().concat('@gmail.com'),
     celular:  Math.random().toString(),
 }

@@ -5,6 +5,7 @@ class Aluno extends Model {
         super.init({
             login: DataTypes.STRING,
             senha: DataTypes.STRING,
+            nome: DataTypes.STRING,
             email: DataTypes.STRING,
             celular: DataTypes.STRING,
             dtExpiracao: DataTypes.DATE,

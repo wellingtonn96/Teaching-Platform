@@ -1,0 +1,102 @@
+@charset "utf-8";
+
+#Todas {
+  margin: 0 auto;
+  width: 80%;
+}
+
+body {
+  background-image: url(imagens/fundo.jpg);
+}
+
+#Topo {
+  height: 70px;
+  margin-bottom: 5px;
+  background-color: rgba(14, 80, 146, 0.829);
+}
+
+#Esquerda {
+  height: 800px;
+  width: 76%;
+  float: left;
+  background-color: #ffffff;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#Direita {
+  height: 600px;
+  width: 20%;
+  color: white;
+  float: right;
+  background-color: #0e5092;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#Arrumar {
+  clear: both;
+}
+
+/* Titulos*/
+
+h1 {
+  font-family: Segoe, 'Segoe UI', 'DejaVu Sans', 'Trebuchet MS', Verdana,
+    sans-serif;
+  color: #717171;
+}
+
+p {
+  font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times,
+    'Times New Roman', serif;
+  color: #2f2f2f;
+  text-align: justify;
+}
+
+#menu {
+  border: 1px solid #ffffff;
+  display: block;
+  color: #ffffff;
+  font-family: Segoe, 'Segoe UI', 'DejaVu Sans', 'Trebuchet MS', Verdana,
+    sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+#menu li {
+  border-left: 1px solid #ffffff;
+  margin-top: 10px;
+  display: block;
+  float: right;
+  padding: 5px 20px;
+  background: color #000000;
+}
+
+#menu a:hover {
+  /*Efeitos sobre links a*/
+  color: #0e5092; /*cor muda ao passar mouse*/
+  font-size: 19px; /*font aumenta ao passa o mouse*/
+}
+
+#menu li:hover {
+  background-color: #ffffff;
+}
+
+#RODAPE {
+  color: red;
+  background: black;
+}
+
+table {
+  width: 800px;
+  color: #717171;
+}
+P2 {
+  font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times,
+    'Times New Roman', serif;
+  color: #2f2f2f;
+  text-align: justify;
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang='pt-br'>
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Impacta Tecnologia</title>
+
+  <!-- todos os dispositivos -->
+  <link href="../styles/estilo.css" rel="stylesheet" type="text/css" media="all" />
+
+  <!-- imagem em miniatura que aparece na aba do navegador -->
+  <link rel="icon" type="image/png" href="imagens/favicon.jpg" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lodash@4.17.5/lodash.min.js"></script>
+</head>
+
+<body>
+
+  <div id="Todas">
+
+    <div id="Topo">
+
+      <img src="imagens/logo.png" style="float:left;" />
+
+      <ul id="menu">
+
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="cursos.html">Cursos</a>
+        </li>
+        <li>
+          <a href="login.html">Login</a>
+        </li>
+        <li>
+          <a href="novo_aluno.html">Novo Aluno</a>
+        </li>
+        <li>
+          <a href="formulario_curso.html">Novo Curso</a>
+        </li>
+        <li>
+          <a href="formulario_disciplina.html">Nova Disciplina</a>
+        </li>
+        <li>
+          <a href="matricula.html">Matricula</a>
+        </li>
+
+
+
+      </ul>
+
+
+    </div>
+
+    <div id="Esquerda">
+
+
+      <form id="frm_matricula">
+        <table cellspacing="10">
+          <tr>
+            <td>
+              <label for="Curso">Curso:</label>
+            </td>
+            <td align="left">
+              <select name="Curso" id="slc_curso">
+                <option value="" selected></option>
+                <option value="ADS">Analise e Desenvolvimento de Sistemas</option>
+                <option value="SI">Sistema da informação</option>
+              </select>
+            </td>
+
+            <tr>
+              <td>
+                <label for="disciplinas">Disciplina:</label>
+              </td>
+              <td align='left'>
+                <select name="Disciplina" id="slc_disciplina">
+                  <option value="" selected></option>
+                  <option value="TECWEB">Tecnologia Web</option>
+                  <option value="ENG">Engenharia de Software</option>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="semestre">Semestre:</label>
+              </td>
+              <td align='left'>
+                <select name="Semestre" id="slc_semestre">
+                  <option value="" selected></option>
+                  <option value="1">1º 2018</option>
+                  <option value="2">2º 2018</option>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="turma">Turma:</label>
+              </td>
+              <td align='left'>
+                <select name="turma" id="slc_turma">
+                  <option value="" selected></option>
+                  <option value="TA">Turma A</option>
+                  <option value="TB">Turma B</option>
+              </td>
+            </tr>
+        </table>
+        </br>
+        <input type="button" id="btn_frmMatricula" value='Filtrar'>
+        <input type="button" id="btn_frmMatriculaLimpar" value='Limpar filtros'>
+
+      </form>
+      <ol id='lst_alunos'></ol>
+
+    </div>
+    <div id="Arrumar">
+
+
+    </div>
+
+    <div id="RODAPE">CONTATO</div>
+
+  </div>
+
+  <script src="../app/app.js" type="module"></script>
+</body>
+
+</html>
